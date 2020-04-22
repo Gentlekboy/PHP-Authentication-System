@@ -35,6 +35,17 @@
         $_SESSION["email"] = $userobject->email;
         $_SESSION["fullname"] = $userobject->firstname . " " . $userobject->lastname;
         $_SESSION["role"] = $userobject->designation;
+
+        getdate();
+
+        $mydate = getdate(date("U"));
+
+        $time = "$mydate[hours]:$mydate[minutes]";
+        $date = "$mydate[weekday], $mydate[month] $mydate[mday] $mydate[year]";
+        $dateTime = $time ." ". $date;
+
+        file_put_contents("../db/time/".  $email . ".json", json_encode($dateTime));
+        
         //For different dashboards
         if ($userobject->designation == "patient") {
           redirect_to("../patient.php");
