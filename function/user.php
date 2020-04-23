@@ -47,9 +47,5 @@
   function save_user($userobject){
     file_put_contents("../db/users/" . $userobject["email"] . ".json", json_encode($userobject));
   }
-
-  function update_user(){
-
-  }
     
 ?>
