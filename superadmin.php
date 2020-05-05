@@ -1,7 +1,11 @@
 <?php
   include_once("lib/header.php");
   session_start();
-
+  require_once("function/token.php");
+  require_once("function/alert.php");
+  require_once("function/redirect.php");
+  require_once("function/user.php");
+  require_once("function/email.php");
 ?>
   <title>SNGH: Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,6 +19,7 @@
       <a class="p-2 text-dark" href="allappointment.php">View All Appointments</a>
       <a class="p-2 text-dark" href="addpersonnel.php">Add Medical Personnel</a>
       <a class="p-2 text-dark" href="addpatient.php">Add Patient</a>
+      <a class="p-2 text-dark" href="payment.php">View Payments</a>
 
     </nav>
     </div>

@@ -10,11 +10,9 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">Dashboard - Medical Personnel</h5>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="tasks.php">Tasks</a>
-      <a class="p-2 text-dark" href="sick.php">Patients</a>
-      <a class="p-2 text-dark" href="wards.php">Wards</a>
-      <a class="p-2 text-dark" href="cmd.php">Message the CMD</a>
-      <a class="p-2 text-dark" href="test.php">Test Results</a>
+    <a class="p-2 text-dark" href="allappointment.php">View All Appointments</a>
+      <a class="p-2 text-dark" href="addpatient.php">Add Patient</a>
+      <a class="p-2 text-dark" href="payment.php">View Payments</a>
 
     </nav>
     </div>
