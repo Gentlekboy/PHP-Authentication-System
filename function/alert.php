@@ -5,8 +5,10 @@
     $colors = ["green", "grey", "red"];
 
     for($i = 0; $i < count($types); $i++){
+
       if(isset($_SESSION[$types[$i]]) && !empty($_SESSION[$types[$i]])){
-        echo "<span style='color:".$colors[$i]."'>" . $_SESSION[$types[$i]] . "</span>";
+        echo "<span style'color:".$colors[$i]."'>" . $_SESSION[$types[$i]] . "</span>";
+
         session_destroy();
       }
     }

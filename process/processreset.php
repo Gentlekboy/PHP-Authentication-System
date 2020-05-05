@@ -39,7 +39,7 @@
 
         $userobject->password = password_hash($password, PASSWORD_DEFAULT);
 
-        unlink("../db/users/" . $currentuser);
+        //unlink("../db/users/" . $currentuser);
         unlink("../db/token/" . $currentuser);
 
         save_user($userobject);

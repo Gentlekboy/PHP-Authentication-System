@@ -2,7 +2,7 @@
     session_start();
 
     if(isset($_SESSION["loggedin"]) && !empty($_SESSION["loggedin"])) {
-      header("Location: dashboard.php");
+      header("Location: pay.php");
     }
   include_once("lib/header.php");
   require_once("function/alert.php");
